@@ -10,3 +10,15 @@ data test;
 	a+1;
 	if a<=n;
 run;
+
+/* 2. */
+
+/* 1-1/2+1/3-1/4+…-1/100 */
+
+data;
+	total = 0;
+	do i= 1 to 100;
+		total+1/((-1)**(i+1)*i);
+		put total= i=;
+	end;
+run;
