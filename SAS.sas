@@ -42,3 +42,23 @@ run;
 |    n=496   |
 |    n=8128  |
 *------------*;
+
+/* 4. */
+/* Get the greatest common devisor with Euclidean algorithm */
+
+data;
+	m = 124288;
+	n = 248448;
+	i = mod(m, n);
+	a = n;
+	do while (i ^= 0);
+		b = i;
+		i = mod(a, i);
+		a = b;
+	end;
+	put a=;
+run;
+
+*---output---*
+|   a =128   |
+*------------*;
