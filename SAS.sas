@@ -5,7 +5,7 @@
 data test;
 	set DT;
 	by A;
-  n = 10; * This is your wanted n;
+	n = 10; * This is your wanted n;
 	if first.A then a=0;
 	a+1;
 	if a<=n;
