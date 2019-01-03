@@ -62,3 +62,11 @@ run;
 *---output---*
 |   a =128   |
 *------------*;
+
+/* 5. */
+/* To test the percentage of "Male" in a dataset named "class", 
+   with 80% confidence interval.                               */
+   
+proc freq data=sas.class;
+	tables sex / binomial alpha=0.2;
+run;
